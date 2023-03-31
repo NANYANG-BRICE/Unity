@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Logo from '@/layouts/full/logo/Logo.vue';
-import RegisterForm from '@/components/auth/RegisterForm.vue';
+import ResetForm from '@/components/auth/ResetForm.vue';
 </script>
 <template>
     <div class="authentication">
@@ -12,8 +12,8 @@ import RegisterForm from '@/components/auth/RegisterForm.vue';
                             <div class="d-flex justify-center py-4">
                                 <Logo />
                             </div>
-                            <div class="text-body-1 text-muted text-center mb-3">Rejoignez la communauté maintenant</div>
-                            <RegisterForm />
+                            <div class="text-body-1 text-muted text-center mb-3">Réinitialisez votre mot de passe.</div>
+                            <ResetForm />
                             <h6 class="text-h6 text-muted font-weight-medium d-flex justify-center align-center mt-3">
                                 Vous avez déjà un compte ?
                                 <RouterLink to="/auth/login"

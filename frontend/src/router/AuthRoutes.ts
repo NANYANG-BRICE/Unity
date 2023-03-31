@@ -11,6 +11,11 @@ const AuthRoutes = {
             component: () => import('@/views/auth/Login.vue')
         },
         {
+            name: 'Reset',
+            path: '/auth/reset',
+            component: () => import('@/views/auth/Reset.vue')
+        },
+        {
             name: 'Register',
             path: '/auth/register',
             component: () => import('@/views/auth/Register.vue')
