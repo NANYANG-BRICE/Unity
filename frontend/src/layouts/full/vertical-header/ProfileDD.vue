@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { UserIcon, MailIcon, ListCheckIcon } from 'vue-tabler-icons';
+import { SettingsIcon} from 'vue-tabler-icons';
 </script>
 
 <template>
@@ -8,8 +8,10 @@ import { UserIcon, MailIcon, ListCheckIcon } from 'vue-tabler-icons';
     <!-- ---------------------------------------------- -->
     <v-menu :close-on-content-click="false">
         <template v-slot:activator="{ props }">
+                <span class="mt-2" size="1" style="font-size: 0.8rem;">Nanyang Brice</span>
             <v-btn class="profileBtn custom-hover-primary" variant="text" v-bind="props" icon>
                 <v-avatar size="35">
+
                     <img src="@/assets/images/users/avatar-1.jpg" height="35" alt="user" />
                 </v-avatar>
             </v-btn>
@@ -18,25 +20,15 @@ import { UserIcon, MailIcon, ListCheckIcon } from 'vue-tabler-icons';
             <v-list class="py-0" lines="one" density="compact">
                 <v-list-item value="item1" active-color="primary" >
                     <template v-slot:prepend>
-                        <UserIcon stroke-width="1.5" size="20"/>
+                        <SettingsIcon stroke-width="1.5" size="20"/>
                     </template>
-                    <v-list-item-title class="pl-4 text-body-1">My Profile</v-list-item-title>
-                </v-list-item>
-                <v-list-item value="item2" active-color="primary">
-                    <template v-slot:prepend>
-                        <MailIcon stroke-width="1.5" size="20"/>
-                    </template>
-                    <v-list-item-title  class="pl-4 text-body-1">My Account</v-list-item-title>
-                </v-list-item>
-                <v-list-item value="item3" active-color="primary"> 
-                    <template v-slot:prepend>
-                        <ListCheckIcon stroke-width="1.5"  size="20"/>
-                    </template>
-                    <v-list-item-title class="pl-4 text-body-1">My Task</v-list-item-title>
+                    <v-list-item-title class="pl-4 text-body-1">Paramètres</v-list-item-title>
                 </v-list-item>
             </v-list>
             <div class="pt-4 pb-4 px-5 text-center">
-                <v-btn to="/auth/login" color="primary" variant="outlined" block>Logout</v-btn>
+                <v-btn to="/auth/login" color="primary" variant="outlined" block>
+                    Déconnexion <v-icon icon="mdi-logout" class="ml-1"></v-icon>
+                </v-btn>
             </div>
         </v-sheet>
     </v-menu>

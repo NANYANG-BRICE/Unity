@@ -12,24 +12,24 @@ const MainRoutes = {
             component: () => import('@/views/dashboard/index.vue')
         },
         {
-            name: 'Typography',
-            path: '/ui/typography',
-            component: () => import('@/views/components/Typography.vue')
+            name: 'Parametres',
+            path: '/Parametres',
+            component: () => import('@/views/pages/Parametres.vue')
         },
         {
-            name: 'Shadow',
-            path: '/ui/shadow',
-            component: () => import('@/views/components/Shadow.vue')
+            name: 'Repertoire',
+            path: '/repertoire',
+            component: () => import('@/views/pages/Repertoire.vue')
         },
         {
-            name: 'Icons',
-            path: '/icons',
-            component: () => import('@/views/pages/Icons.vue')
+            name: 'Historique',
+            path: '/Historique',
+            component: () => import('@/views/pages/Historique.vue')
         },
         {
-            name: 'Starter',
-            path: '/sample-page',
-            component: () => import('@/views/pages/SamplePage.vue')
+            name: 'Messagerie',
+            path: '/Messagerie',
+            component: () => import('@/views/pages/Messagerie.vue')
         },
     ]
 };
